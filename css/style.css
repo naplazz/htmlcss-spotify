@@ -2,10 +2,14 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'proxima-nova';
 }
+
 .main-container {
-  height: 100vh;
+
   display: flex;
+  height: 90vh;
+
 }
 .left-bar {
   background-color: black;
@@ -15,12 +19,48 @@
   width: 100%;
   padding: 20px;
 }
+.left-bar i {
+  padding: 0 5px 0 0;
+}
+.left-bar .btn {
+    padding: 0 50px;
+    margin: 20px;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+
+    font-size: 20px;
+    padding: 5px 50px 5px 50px;
+    text-decoration: none;
+
+  }
+
+  .btn:hover {
+    background: #3cb0fd;
+
+    text-decoration: none;
+  }
+
+
+.btn-white {
+  background-color: white;
+  color: black;
+}
+.btn-black {
+  background-color: black;
+  border: 2px solid white;
+    color: #ffffff;
+}
+
 .main-content {
   background-color: darkblue;
   flex:5;
   color: white;
-  height: 100vh;
+  
   overflow-y: scroll;
+  background: linear-gradient(to right, rgba(35,83,138,1) 0%,rgba(0,0,0,1) 42%,rgba(0,0,0,1) 42%);
+  padding: 0 100px;
 }
 
 .navbar ul {
@@ -37,22 +77,28 @@
   list-style: none;
 }
 
-.title h1 {
-  padding: 0 20px;
+ h1 {
+   padding: 10px;
 }
 
 .records-grid {
  display: flex;
  flex-wrap: wrap;
- justify-content: space-around;
+ justify-content: flex-start;
+
 
 
 }
 
 .album-item {
 
-  padding: 30px;
+  padding: 10px;
+  text-align: center;
 
+}
+.album-item img {
+  width: 220px;
+  height: 220px;
 }
 
 
@@ -63,4 +109,11 @@
   list-style: none;
   color: white;
   font-size: 20px;
+}
+
+.footer {
+  display: flex;
+  background-color: darkgray;
+  height: 10vh;
+
 }
